@@ -1,15 +1,18 @@
 body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     margin: 0;
     padding: 0 0;
+    font-family: Lucida Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #080324;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
 }
 
 header {
-    background-color:#fff ;
+    background-color:#f0f0ff;
     color: #007bff;
     text-align: center;
     padding: 5px 0;
@@ -19,7 +22,7 @@ header {
     z-index: 100;
     height: 40px;
     display: flex;
-    justify-content: flex-end; /* Align items to the bottom */
+    justify-content: flex-end;
 
 }
 
@@ -27,11 +30,29 @@ header {
     max-width: 100px;
 }
 
-.intro{
-    background-color: darkblue;
-    padding:20px;
-    color: wheat;
+.search-box {
+    display: none;
+}
 
+.intro{
+    background-color: white;
+    padding:20px;
+    color: #007bff;
+}
+
+
+
+.intro .blocks .feature{
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
+    border: solid 3px;
+    font-size: 1.8vw;
+}
+
+.intro img{
+    width: 70%;
+    height: auto;
 }
 
 .intro p{
@@ -40,13 +61,13 @@ header {
 
 .intro h1 {
     font-size: 420%;
-    color: wheat;
+    color: #007bff;
 }
 
 .header-obj a{
     text-decoration: none;
     margin: 5px;
-    color: grey;
+    color:#080324;
     font-size: 12px;
     text-align:end;
 }
@@ -56,7 +77,7 @@ header {
 }
 
 .header-obj a:hover {
-    color: #000;
+    color: #b11510;
 }
 
 .header .cta p {
@@ -66,9 +87,9 @@ header {
 
 .btn {
     display: inline-block;
-    background-color: #fff;
-    color: #007bff;
-    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -79,6 +100,15 @@ header {
 .btn:hover {
     background-color: #0056b3;
     color: #fff;
+}
+
+#sign-up{
+    background-color: #f0f0f0;
+    color: #0056b3;
+}
+
+#sign-up:hover{
+    text-decoration: underline;
 }
 
 body {
@@ -106,17 +136,6 @@ body {
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #fff;
-    color: #007bff;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
 
 .btn:hover {
     background-color: #0056b3;
@@ -128,12 +147,25 @@ body {
     text-align: center;
 }
 
+#features h2{
+    text-align: left;
+    padding-left: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #080324;
+    color: #fff;
+    padding: 10px;
+}
+
+.feature h2{
+    margin:10px;
+}
+
 .feature {
-    margin: 20px;
+    margin: 10px;
     border:2px grey solid;
-    width: 33%;
-    border-radius: 0 0 25px 25px ;
+    background-color: white;
     box-shadow: 5px 5px 10px #888888;
+    padding: 7px;
 }
 
 .feature img {
@@ -141,11 +173,51 @@ body {
     border-radius: 25px 0 0 0 10px;
     height: auto;
 }
-.feature h2{
-    color: darkblue;
-    text-align: right;
+.feature h3{
+    font-family:cursive;    
+}
+
+.feature p{
+    font-size: 80%;
+    font-family:cursive;
+}
+
+
+.how-we-help .blocks{
+    display: flex;
+    margin: 10px;
+    border:1px solid black;
+    background-color: #080324;
+}
+
+.how-we-help .blocks p{  
+    font-size: 1.3em;
 
 }
+
+.how-we-help .blocks .feature{
+    width:35%;
+    border-radius: 30px;
+    height: fit-content;
+}
+
+.how-we-help .blocks .feature img{
+     height: fit-content;
+     width: fit-content;
+}
+
+.how-we-help .blocks .feature a{
+    margin-top: 100%;
+    color:grey;
+    font-size: 9px;
+    text-decoration: none;
+
+}
+
+.how-we-help h2{
+    margin: 10px;;
+}
+
 
 #testimonials {
     background-color: #fff;
@@ -164,6 +236,9 @@ body {
     max-width: 80px;
     border-radius: 50%;
 }
+cite{
+    font-size: .8em;;
+}
 
 #pricing {
     background-color: #f0f0f0;
@@ -176,27 +251,46 @@ body {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 25px;
     width: 10cm;
+    background-color: #080324;
+    color: #fff;
+
 }
 
 .plan h3 {
     font-size: 1.5rem;
     margin: 10px 0;
+    color: #fff;
 }
 
 .plan p {
     font-size: 1rem;
     margin: 10px 0;
+    color: #fff;
+    
+}
+
+.price{
+    font-size: 30px;
+    text-decoration:solid;
 }
 
 .plan ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: disc; /* Use 'disc' for bullets */
+    padding-left: 15%;
+    padding: 10px;
+    color: #fff;
+    
 }
 
 .plan ul li {
-    margin: 5px 0;
+    text-align: left; /* Reset text alignment for list items */
+    margin: 0; /* Reset margin */
+    margin-right: 10px;
+    padding: 7px;
+    color: #fff;
+
 }
 
 #contact {
@@ -229,12 +323,57 @@ form button:hover {
     background-color: #0056b3;
 }
 
+#contact h2{
+    text-align: left;
+    margin: 10px;
+    color: #b11510;
+}
+
+#contact p{
+    text-align: left;
+    margin: 10px;
+}
+
+#details{
+    padding-right: 50px;
+    text-align: left;
+    background-color: #080324;
+    color: #fff;
+
+}
+
+#details h3{
+    color: #fff;
+}
+
+.detail-col{
+    margin: 20px;
+    text-align: left;
+}
+
+.detail-data{
+    margin: 30px 0 0 0;
+    text-align: left;
+}
+
+.detail-data a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.detail-data a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
 footer {
-    background-color:white;
+    background-color: grey;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    padding-bottom: 0;
 }
+
 
 .social {
     list-style: none;
@@ -246,13 +385,28 @@ footer {
     margin: 0 10px;
 }
 
-.social img {
-    max-width: 30px;
-    opacity: 0.7;
-    transition: opacity 0.3s;
+
+footer a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin:0 10px ;
+
 }
 
-.social img:hover {
-    opacity: 1;
+footer a:hover{
+    text-decoration: underline;
+}
+
+.final-links{
+    display: flex;
+    margin: 10px;
+}
+
+.final-links p{
+    font-size: 12px;
+    margin: 10px;
+    margin-left: auto;
+
 }
 
