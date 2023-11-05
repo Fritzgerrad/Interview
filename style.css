@@ -1,0 +1,258 @@
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color:#fff ;
+    color: #007bff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the bottom */
+
+}
+
+.header .logo img {
+    max-width: 100px;
+}
+
+.intro{
+    background-color: darkblue;
+    padding:20px;
+    color: wheat;
+
+}
+
+.intro p{
+    padding:1%;
+}
+
+.intro h1 {
+    font-size: 420%;
+    color: wheat;
+}
+
+.header-obj a{
+    text-decoration: none;
+    margin: 5px;
+    color: grey;
+    font-size: 12px;
+    text-align:end;
+}
+
+.header-obj a:visited{
+    color: grey;
+}
+
+.header-obj a:hover {
+    color: #000;
+}
+
+.header .cta p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+body {
+    padding-top: 40px;
+}
+
+
+.blocks{
+    display: flex;
+}
+
+.header .logo img {
+    
+    width: 50;
+    height: 50;
+}
+
+.header .cta h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.header .cta p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+#features {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.feature {
+    margin: 20px;
+    border:2px grey solid;
+    width: 33%;
+    border-radius: 0 0 25px 25px ;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 25px 0 0 0 10px;
+    height: auto;
+}
+.feature h2{
+    color: darkblue;
+    text-align: right;
+
+}
+
+#testimonials {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.testimonial img {
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+#pricing {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.plan {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 10cm;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.plan p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin: 5px 0;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+form {
+    margin: 20px;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color:white;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social {
+    list-style: none;
+    padding: 0;
+}
+
+.social li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social img {
+    max-width: 30px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.social img:hover {
+    opacity: 1;
+}
+
